@@ -177,8 +177,21 @@ double calcul_energie_potentielle_terme_commun(Particule tab_par[], int index_mo
 
                         if (!tab_par[j].actif) continue; 
 
+
                     double x_sous = tab_par[j].x - tab_par[i].x; //Dx
                     double y_sous = tab_par[j].y - tab_par[i].y; //
+
+                    double abs_distx = fabs(x_sous);
+                    double abs_disty = fabs(y_sous);
+
+                    if (abs_distx > Lmoitie) {
+                        x_sous = - (x_sous / abs_distx) * (L_boite - abs_distx);
+                    }
+
+                    if (abs_disty > Lmoitie) {
+                        y_sous = - (y_sous / abs_disty) * (L_boite - abs_disty);
+                    }
+                        
                     /*Calcul de la distance entre deux particules*/
                     rij2 = x_sous * x_sous + y_sous * y_sous;   
 
@@ -217,8 +230,21 @@ double calcul_energie_potentielle_terme_modifie(Particule tab_par[], int index_m
             if (!tab_par[j].actif) continue; 
 
             if(j!=i){
+                
                 double x_sous = tab_par[j].x - tab_par[i].x; //Dx
                 double y_sous = tab_par[j].y - tab_par[i].y; //
+
+                double abs_distx = fabs(x_sous);
+                double abs_disty = fabs(y_sous);
+
+                if (abs_distx > Lmoitie) {
+                    x_sous = - (x_sous / abs_distx) * (L_boite - abs_distx);
+                }
+
+                if (abs_disty > Lmoitie) {
+                    y_sous = - (y_sous / abs_disty) * (L_boite - abs_disty);
+                }
+                
                 /*Calcul de la distance entre deux particules*/
                 rij2 = x_sous * x_sous + y_sous * y_sous;   
 
