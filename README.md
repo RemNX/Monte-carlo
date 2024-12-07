@@ -8,6 +8,8 @@ Dans le cadre de l'enseignement de **Simulation Atomistique des Matériaux** des
 
 Le potentiel utilisé ici est le potentiel de Lennard-Jones dans un cadre 2d : $u(r) = 4 \epsilon \left[ (\frac{\sigma}{r})^{12} - (\frac{\sigma}{r})^{6} \right]$. Les N particules de notre système étudié se trouvent dans une boîte 2D pour laquelle on a appliqué les conditions aux bords périodiques. Des paramètres comme le nombre de particules ou encore la taille de la boîte peuvent être modifiés directement dans le code. 
 
+Attention on utilise la formule du potentiel de Lennard-Jonnes adimensionnée par défaut dans le code. 
+
 ## Méthode de Monte-Carlo - détails
 
 Ces simulations utilisent la méthode de Monte-Carlo mais plus précisément encore selon l'agorithme de Metropolis. Les déplacements aléatoires de particules sont ainsi acceptées ou refusées selon le critère de Metropolis. Chaque tentative de déplacement correspond à une tentative de déplacer **une seule** particule. Et un cycle correspond à N tentatives de déplacement, avec N le nombre de particules dans votre système. Ainsi si vous avez par exemple N=100 et que vous effectuer 5 cycles, vous aurez effectué 500 tentatives, acceptées ou refusées. Ainsi chaque particule, au cours d'un cycle, effectue en moyenne une tentative de déplacement. 
@@ -26,8 +28,12 @@ Le deuxième nommé "*Cristal*" correspond au cas ou initialement notre système
 
 ## Configuration initiale aléatoire 
 
-Pour ce cas de figure le code C vous sortira un fichier txt nommé "*positions_data.txt*" et qui contiendra les positions en x et y des particules à chaque cycle. Ce fichier est compatible avec Ovito.\\
-Vous aurez aussi dans le terminal l'avancement du nombre de cycle au fur et à mesure de l'exécution ainsi qu'à la fin le taux d'acceptation d'affichées qui correspond à : $taux = \frac{\text{nombre tentatives acceptées}}{\text{nombre total de tentatives}}$. 
+Pour ce cas de figure le code C vous sortira un fichier txt nommé "*positions_data.txt*" et qui contiendra les positions en x et y des particules à chaque cycle. Ce fichier est compatible avec Ovito.
+Vous aurez aussi dans le terminal l'avancement du nombre de cycle au fur et à mesure de l'exécution ainsi qu'à la fin le taux d'acceptation d'affiché qui correspond à : $taux = \frac{\text{nombre tentatives acceptées}}{\text{nombre total de tentatives}}$. 
+
+Il vous est aussi possible de modifier aisément le code afin de récupérer la pression ou l'énergie potentielle au cours de la simulation, pour cela il suffit de prendre exemple sur les codes C concernant le cristal.
+
+Dans les constantes au début du programme il vous est possible de changer le nombre de particules, la taille de la boîte, le rayon de coupure vis à vis du potentiel, le nombre de cycles, la température ou encore le $\delta_{max}$ qui correspond au rayon de la sphère dans laquelle je déplace ma particule lors d'une tentative. 
 
 ## Comment faire fonctionner les codes ? 
 
