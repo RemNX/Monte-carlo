@@ -22,7 +22,7 @@ Le deuxième nommé "*Cristal*" correspond au cas ou initialement notre système
 
 <img width="197.5" alt="cristal_infini_1" src="https://github.com/user-attachments/assets/6ba9b531-ef50-4a5b-b935-977eb512bed7">
 
-<img width="670" alt="cristal_infini_distances" src="https://github.com/user-attachments/assets/6d0aead2-b25b-4dd0-a3ef-9e220450840f">
+<img width="335" alt="cristal_infini_distances" src="https://github.com/user-attachments/assets/6d0aead2-b25b-4dd0-a3ef-9e220450840f">
 
 
 ## Comment faire fonctionner les codes ? 
