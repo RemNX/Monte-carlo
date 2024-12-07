@@ -18,7 +18,7 @@ Il y a sur ce dépôt deux dossiers.
 
 Le premier nommé "*Configuration initiale aléatoire*" correspond au cas de figure où on initialise aléatoirement la position des N particules au sein de notre boîte au début de la simulation. Cela signifie que si la taille de la boite est de 10, chaque particule aura son x et son y dans des intervalles [-L/2 ; L/2] = [-5;5] les positionnant dans la boîte. 
 
-Le deuxième nommé "*Cristal*" correspond au cas ou initialement notre système est dans une configuration cristalline avec un cristal infiniment périodique. Pour ce cas de figure, si vous voulez avoir réellemnt un cristal infiniment périodique il est sage de choisir un nombre N de particules carré, tel que 6*6=36 ou 10*10=100 particules par exemple. Le programme calculera automatiquement comment espacer vos particules pour que le cristal soit infiniment périodique en prenant en compte les images périodiques. 
+Le deuxième nommé "*Cristal*" correspond au cas ou initialement notre système est dans une configuration cristalline avec un cristal infiniment périodique. Pour ce cas de figure, si vous voulez avoir réellemnt un cristal infiniment périodique il est sage de choisir un nombre N de particules carré, tel que 6x6=36 ou 10x10=100 particules par exemple. Le programme calculera automatiquement comment espacer vos particules pour que le cristal soit infiniment périodique en prenant en compte les images périodiques. 
 
 <img width="197.5" alt="cristal_infini_1" src="https://github.com/user-attachments/assets/6ba9b531-ef50-4a5b-b935-977eb512bed7">
 
