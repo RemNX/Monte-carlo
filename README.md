@@ -2,6 +2,8 @@
 
 Ce dépôt comprend des codes de dynamique moléculaire écrits en langage C ainsi que des petits codes Python permettant l'analyse complémentaire des données issues des simulations. 
 
+Tous les codes sont commentés. 
+
 ## Contexte
 
 Dans le cadre de l'enseignement de **Simulation Atomistique des Matériaux** des master 2 de Physique Numérique et de Chimie Théorique de l'université de Montpellier les codes suivants ont été développés. Le but étant d'avoir un code de dynamique moléculaire classique 2D robuste utilisant la méthode monte-carlo pour pouvoir illustrer les transitions de phase. 
