@@ -1,5 +1,7 @@
 # Simulation de Dynamique Moléculaire classique avec une méthode Monte-Carlo et l'algorithme de Metropolis
 
+Ce dépôt comprends des codes de dynamique moléculaire écrits en langage C ainsi que des petits Python permettant l'analyse complémentaire des données issues des simulations. 
+
 ## Contexte
 
 Dans le cadre de l'enseignement de **Simulation Atomistique des Matériaux** des master 2 de Physique Numérique et de Chimie Théorique de l'université de Montpellier les codes suivants ont été développés. Le but étant d'avoir un code de dynamique moléculaire robuste utilisant la méthode monte-carlo pour pouvoir illustrer les transitions de phase. 
