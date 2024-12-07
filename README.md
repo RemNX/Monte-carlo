@@ -8,6 +8,9 @@ Dans le cadre de l'enseignement de **Simulation Atomistique des Matériaux** des
 
 Le potentiel utilisé ici est le potentiel de Lennard-Jones dans un cadre 2d : $u(r) = 4 \epsilon \left[ (\frac{\sigma}{r})^{12} - (\frac{\sigma}{r})^{6} \right]$. Les N particules de notre système étudié se trouvent dans une boîte 2D pour laquelle on a appliqué les conditions aux bords périodiques. Des paramètres comme le nombre de particules ou encore la taille de la boîte peuvent être modifiés directement dans le code. 
 
+## Méthode de Monte-Carlo - détails
+
+Ces simulations utilisent la méthode de Monte-Carlo mais plus précisément encore selon l'agorithme de Metropolis. Les déplacements aléatoires de particules sont ainsi acceptées ou refusées selon le critère de Metropolis. Chaque tentative de déplacement correspond à une tentative de déplacer **une seule** particule. Et un cycle correspond à N tentatives de déplacement, avec N le nombre de particules dans votre système. Ainsi si vous avez par exemple N=100 et que vous effectuer 5 cycles, vous aurez effectué 500 tentatives, acceptées ou refusées. Ainsi chaque particule, au cours d'un cycle, effectue en moyenne une tentative de déplacement. 
 
 ## Comment faire fonctionner les codes ? 
 
