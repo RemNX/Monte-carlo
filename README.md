@@ -20,7 +20,7 @@ Le premier nommé "*Configuration initiale aléatoire*" correspond au cas de fig
 
 Le deuxième nommé "*Cristal*" correspond au cas ou initialement notre système est dans une configuration cristalline avec un cristal infiniment périodique. Pour ce cas de figure, si vous voulez avoir réellemnt un cristal infiniment périodique il est sage de choisir un nombre N de particules carré, tel que 6*6=36 ou 10*10=100 particules par exemple. Le programme calculera automatiquement comment espacer vos particules pour que le cristal soit infiniment périodique en prenant en compte les images périodiques. 
 
-<img width="395" alt="cristal_infini_1" src="https://github.com/user-attachments/assets/6ba9b531-ef50-4a5b-b935-977eb512bed7">
+<img width="197.5" alt="cristal_infini_1" src="https://github.com/user-attachments/assets/6ba9b531-ef50-4a5b-b935-977eb512bed7">
 
 <img width="670" alt="cristal_infini_distances" src="https://github.com/user-attachments/assets/6d0aead2-b25b-4dd0-a3ef-9e220450840f">
 
