@@ -35,6 +35,25 @@ Il vous est aussi possible de modifier aisément le code afin de récupérer la 
 
 Dans les constantes au début du programme il vous est possible de changer le nombre de particules, la taille de la boîte, le rayon de coupure vis à vis du potentiel, le nombre de cycles, la température ou encore le $\delta_{max}$ qui correspond au rayon de la sphère dans laquelle je déplace ma particule lors d'une tentative. 
 
+## Configuration initiale cristalline
+
+Pour ce cas-ci il y a 3 dossiers qui vous sont disponibles, chacun servant un objectif différent. 
+
+### Energie potentiel + pression
+
+Ces codes permettent l'étude de la pression et de l'énergie potentiel au cours de la simulation. Ils peuvent permettrent par exemple de déterminer au bout de combien de cycles le système arrive dans un état d'équilibre (plateau de l'énergie potentielle). 
+Vous pouvez aussi vous en servir pour voir les influences d'un échauffement ou encore d'un refroidissement de votre système. 
+
+### Isothermes
+
+Ces codes permettent de tracer l'évolution de la pression en fonction du volume du système (en faisant varier la taille de la boîte). Cela permet ainsi de tracer des isothermes P(V). 
+Pour calculer la pression la méthode du viriel est utilisée. 
+
+### Transition de phase 
+
+Ces derniers codes permettent de tracer l'évolution de l'énergie potentielle en fonction de la densité de votre système. On fait ainsi évoluer la densité du système et pour chaque densité après que le système soit arrivé à l'équilibre on récupère son énergie potentielle. 
+Cela permet d'observer une transition de phase pour par exemple la température kT=0.05. (Avec k la constante de Boltzmann addimensionnée.)
+
 ## Comment faire fonctionner les codes ? 
 
 Afin de faire fonctionner les codes se trouvant sur le github vous devez suivre les étapes suivantes : 
