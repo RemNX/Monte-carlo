@@ -28,7 +28,7 @@ Le deuxième nommé "*Cristal*" correspond au cas ou initialement notre système
 
 <img width="335" alt="cristal_infini_distances" src="https://github.com/user-attachments/assets/6d0aead2-b25b-4dd0-a3ef-9e220450840f">
 
-## Configuration initiale aléatoire 
+## 🎲 Configuration initiale aléatoire 
 
 Pour ce cas de figure le code C vous sortira un fichier txt nommé "*positions_data.txt*" et qui contiendra les positions en x et y des particules à chaque cycle. Ce fichier est compatible avec Ovito.
 Vous aurez aussi dans le terminal l'avancement du nombre de cycle au fur et à mesure de l'exécution ainsi qu'à la fin le taux d'acceptation d'affiché qui correspond à : $taux = \frac{\text{nombre tentatives acceptées}}{\text{nombre total de tentatives}}$. 
@@ -37,7 +37,7 @@ Il vous est aussi possible de modifier aisément le code afin de récupérer la 
 
 Dans les constantes au début du programme il vous est possible de changer le nombre de particules, la taille de la boîte, le rayon de coupure vis à vis du potentiel, le nombre de cycles, la température ou encore le $\delta_{max}$ qui correspond au rayon de la sphère dans laquelle je déplace ma particule lors d'une tentative. 
 
-## Configuration initiale cristalline
+## 💎 Configuration initiale cristalline
 
 Pour ce cas-ci il y a 3 dossiers qui vous sont disponibles, chacun servant un objectif différent. 
 
