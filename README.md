@@ -56,7 +56,7 @@ Pour calculer la pression la méthode du viriel est utilisée.
 Ces derniers codes permettent de tracer l'évolution de l'énergie potentielle en fonction de la densité de votre système. On fait ainsi évoluer la densité du système et pour chaque densité après que le système soit arrivé à l'équilibre on récupère son énergie potentielle. 
 Cela permet d'observer une transition de phase pour par exemple la température kT=0.05. (Avec k la constante de Boltzmann addimensionnée.)
 
-## Comment faire fonctionner les codes ? 
+## :ring_buoy: Comment faire fonctionner les codes ? 
 
 Afin de faire fonctionner les codes se trouvant sur le github vous devez suivre les étapes suivantes : 
 - Choisir si vous souhaitez étudier le cas d'une configuration initiale aléatoire ou cristalline.
