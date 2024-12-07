@@ -24,6 +24,10 @@ Le deuxième nommé "*Cristal*" correspond au cas ou initialement notre système
 
 <img width="335" alt="cristal_infini_distances" src="https://github.com/user-attachments/assets/6d0aead2-b25b-4dd0-a3ef-9e220450840f">
 
+## Configuration initiale aléatoire 
+
+Pour ce cas de figure le code C vous sortira un fichier txt nommé "*positions_data.txt*" et qui contiendra les positions en x et y des particules à chaque cycle. Ce fichier est compatible avec Ovito.\\
+Vous aurez aussi dans le terminal l'avancement du nombre de cycle au fur et à mesure de l'exécution ainsi qu'à la fin le taux d'acceptation d'affichées qui correspond à : $taux = \frac{\text{nombre tentatives acceptées}}{\text{nombre total de tentatives}}$. 
 
 ## Comment faire fonctionner les codes ? 
 
