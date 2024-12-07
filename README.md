@@ -12,11 +12,11 @@ Le potentiel utilisé ici est le potentiel de Lennard-Jones dans un cadre 2d : $
 
 Attention on utilise la formule du potentiel de Lennard-Jonnes adimensionnée par défaut dans le code. 
 
-## Méthode de Monte-Carlo - détails
+## :wrench: Méthode de Monte-Carlo - détails
 
 Ces simulations utilisent la méthode de Monte-Carlo mais plus précisément encore selon l'agorithme de Metropolis. Les déplacements aléatoires de particules sont ainsi acceptées ou refusées selon le critère de Metropolis. Chaque tentative de déplacement correspond à une tentative de déplacer **une seule** particule. Et un cycle correspond à N tentatives de déplacement, avec N le nombre de particules dans votre système. Ainsi si vous avez par exemple N=100 et que vous effectuer 5 cycles, vous aurez effectué 500 tentatives, acceptées ou refusées. Ainsi chaque particule, au cours d'un cycle, effectue en moyenne une tentative de déplacement. 
 
-## Configurations initiales 
+## :spider_web: Configurations initiales 
 
 Il y a sur ce dépôt deux dossiers. 
 
