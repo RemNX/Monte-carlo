@@ -25,7 +25,7 @@ const double U_decal  = 4 * (inv_Rc_12 - inv_Rc_6);
 
 //Je définis le delta max pour le placement aléatoire des particules
 const double delta_max = 0.5*sigma; 
-const double temperature = 1.5; // imposé dans l'exo kT = 0.01
+const double temperature = 5; // imposé dans l'exo kT = 0.01
 const int nombre_cycles =3500; //1 cycle = 128 tentatives, réussies ou non
 
 //-----------------------------{Définition de la structure pour la particule}-----------------------------
@@ -375,18 +375,17 @@ int main()
     double pression;
     double viriel; 
 
-    int L_variations[20]; 
-    double rho_variation[20]; 
-    double L_moitie[20];
-    double volume_variations[20];
-    double U_tail_variations[20];
-    double P_tail_variations[20];
+    int L_variations[40]; 
+    double rho_variation[40]; 
+    double L_moitie[40];
+    double volume_variations[40];
+    double U_tail_variations[40];
+    double P_tail_variations[40];
 
-    for (int i=0; i<20; i++){
-        double s=10+i*1; 
-        L_variations[i]=10+s; 
-        L_moitie[i] = L_variations[i]*0.5; 
-        volume_variations[i] = L_variations[i]*L_variations[i]; 
+    for (int i=0; i<40; i++){
+        volume_variations[i] =80+0.75*i; 
+        L_variations[i] = pow(volume_variations[i],0.5); 
+        L_moitie[i]=L_variations[i]*0.5; 
         rho_variation[i] = nbx_particules/volume_variations[i];
         U_tail_variations[i] = pi * epsilon * nbx_particules * rho_variation[i] * (terme_commun_frac * inv_Rc_10 - inv_Rc_4);
         P_tail_variations[i] = 6*pi*epsilon*rho_variation[i]*rho_variation[i]*(terme_commun_frac*inv_Rc_10 - 0.5*inv_Rc_4);
@@ -397,9 +396,9 @@ int main()
     // temps   x1 y1    x2 y2    x3 y3    x4 y4.....
     //FILE *pos_file = fopen("positions_data.txt", "w");
     //FILE *energie_file = fopen("energie_data_alter.txt", "w"); 
-    FILE *pression_file_volume = fopen("pression_data_1-5.txt","w"); 
+    FILE *pression_file_volume = fopen("pression_data_5.txt","w"); 
 
-    for (int i=0; i<20; i++){
+    for (int i=0; i<40; i++){
 
         double stock_bloc_pression=0; 
         int taille_bloc=10; 
